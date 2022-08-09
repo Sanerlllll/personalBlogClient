@@ -1,0 +1,33 @@
+@import "../styles/mixin.less";
+@import '../styles/var.less';
+.message{
+    .self-center();
+    z-index:999;
+    box-shadow: -2px 2px 5px lightgrey;
+    border-radius:5px;
+    padding:10px 30px;
+    line-height:2;
+    display:flex;
+    align-items:center;
+    color:#fff;
+    opacity:0;
+    transition: .5s;
+    transform:translate(-50%, -50%) translateY(25px);
+    white-space: nowrap;//强制不换行
+}
+.icon{
+    font-size:20px;
+    margin-right: 5px;
+}
+.message-info{
+    background:@primary;
+}
+.message-success{
+    background:@success;
+}
+.message-error{
+    background:@danger;
+}
+.message-warn{
+    background:@warn;
+}
