@@ -59,7 +59,7 @@ export default {
 @import '~@/styles/global.less';
 .menu-container{
     color:@gray;
-    margin:20px 0;
+    margin:15px 0 ;
     padding:0px;
     a{
         padding:0 50px;

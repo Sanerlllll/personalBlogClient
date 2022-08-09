@@ -13,7 +13,7 @@ Mock.mock("/api/setting", "get", {
     weixin: "P2648059506",
     weixinQrCode:wechat,
     mail: "2648059506@qq.com",
-    // icp: "黑ICP备17001719号",
+    icp: "黑ICP备17001719号",
     githubName: "Sanerl",
     avatar: "https://img2.baidu.com/it/u=903803689,1507375621&fm=253&app=120&size=w931&n=0&f=JPEG&fmt=auto?sec=1658336400&t=5ba6e3ca54509e0ad6fd9a23cf6d8b4a",
   },

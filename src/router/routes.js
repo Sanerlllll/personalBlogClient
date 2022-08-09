@@ -27,7 +27,7 @@ function getPageComponent(pageComResolver){
       // 如果是开发环境，则延迟两秒
       if(process.env.NODE_ENV === 'development'){
         await delay(1000);
-        console.log('延迟1秒');
+        // console.log('延迟1秒');
       }
       const comp = await pageComResolver();
       done();//加载完成

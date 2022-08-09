@@ -10,6 +10,9 @@
    
     <Menu></Menu>
     <Contact v-if="data"></Contact>
+    <p v-if="data" class="footer">
+      {{ data.icp }}
+    </p>
   </div>
 </template>
 
@@ -37,15 +40,19 @@ export default {
     box-sizing: border-box;
     padding:20px 0;
     background:@dark;
+    overflow-x:hidden;
+    overflow-y:auto; //纵向超出时出现滚动条
     .avatar-container{
         margin:0 auto;
     }
-    overflow-x:hidden;
-    overflow-y:auto; //纵向超出时出现滚动条
     .info{
         text-align: center;
         color:#fff;
         font-size: 16px;
+    }
+    .footer {
+        text-align: center;
+        font-size: 12px;
     }
 }
 

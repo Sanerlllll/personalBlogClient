@@ -61,7 +61,7 @@ export default {
 .contact-container{
     color:@gray;
     margin:0;
-    padding:20px;
+    padding:15px;
     @li-height:30px;
     font-size: 14px;
     list-style:none;
