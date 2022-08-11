@@ -7,7 +7,7 @@
 // import BlogDetail from '@/views/Blog/Detail'
 import NotFound from '@/views/NotFound';//导入404组件
 import 'nprogress/nprogress.css';//导入css
-import {satrt,done,configure, start} from 'nprogress';//导入nprogress中的start、done方法以及配置函数
+import {done,configure, start} from 'nprogress';//导入nprogress中的start、done方法以及配置函数
 configure({
   trickleSpeed:20,//设置加载速度
   showSpinner:false //不显示加载的圆圈

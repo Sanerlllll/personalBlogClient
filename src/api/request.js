@@ -6,7 +6,7 @@ import showMessage from '../utils/showMessage';
 
 // 创建axios实例,该实例用法和axios完全一致
 const ins = axios.create();
-// 添加请求拦截器
+// 添加响应拦截器
 ins.interceptors.response.use(function(resp){
     // console.log('拦截器');
     // 如果远程请求有错误
