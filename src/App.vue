@@ -9,6 +9,7 @@
       </template>
       <!-- 主区域 -->
       <template #default>
+        <!-- 根据不同路由地址渲染不同组件-->
         <RouterView/>
       </template>  
     </Layout>

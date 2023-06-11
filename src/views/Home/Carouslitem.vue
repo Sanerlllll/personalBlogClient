@@ -1,4 +1,4 @@
-<!-- 轮 播图 -->
+<!-- 轮播图 -->
 <template>
   <div class="carousel-item-container" ref="container" @mousemove="handleMouseMove" @mouseleave="handleMouseLeave">
     <div class="carousel-img" ref="image" :style="imagePosition">
@@ -69,13 +69,14 @@ export default {
     window.removeEventListener('resize',this.setSizes);
   },
   methods:{
+    //显示文字
     showWords(){
       // 先将文字元素显现出来且宽度设为0
       this.$refs.title.style.opacity = 1;
       this.$refs.title.style.width = 0;
       //强制浏览器重新渲染一次
       this.$refs.title.clientWidth;
-      // 设置动画效果且慢慢讲宽度过渡为正常
+      // 设置动画效果且慢慢将宽度过渡为正常
       this.$refs.title.style.transition = '1s';
       this.$refs.title.style.width = this.titleWidth + 'px';
 
@@ -113,7 +114,7 @@ export default {
   /**
    * 图片移动思路：
    * （1）首先得到内外层容器的宽高
-   * （2）记录鼠标在容器内位置：注册鼠标移动事件，通过此实际按拿到鼠标相对于视口的距离clientX，
+   * （2）记录鼠标在容器内位置：注册鼠标移动事件，通过此事件按拿到鼠标相对于视口的距离clientX，
    *      鼠标横坐标 = 鼠标相对于视口距离 - 外层容器相对于视口距离
    * （3）计算图片坐标。找特殊情况，比如鼠标在外层容器的最右侧，
    *      图片溢出的宽度（extraWidth） = 图片宽度 - 容器宽度 

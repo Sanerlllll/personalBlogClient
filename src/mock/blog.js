@@ -248,7 +248,7 @@ Mock.mock(/^\/api\/blog\/[^/]+$/,'get',
   Referer: http://my.com/index.html
   Origin: http://my.com
   
-  {"name": "袁小进", "age": 18 }</code></pre><ol start="4">
+  {"name": "赵四", "age": 25 }</code></pre><ol start="4">
   <li><strong>服务器响应真实请求</strong></li>
   </ol>
   <pre><code>HTTP/1.1 200 OK

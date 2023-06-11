@@ -7,7 +7,7 @@ Mock.mock("/api/setting", "get", {
   data: {
     favicon: "https://img1.baidu.com/it/u=403561891,3930101245&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto?sec=1659891600&t=f7adc6fe6703d2e2c07bfd1f3d17b9f1",
     siteTitle: "Sanerl's blog",
-    github: "https://github.com/DuYi-Edu",
+    github: "https://github.com",
     qq: "2648059506",
     qqQrCode:qq,
     weixin: "P2648059506",

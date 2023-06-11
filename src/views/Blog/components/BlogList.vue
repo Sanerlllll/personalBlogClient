@@ -98,6 +98,7 @@ export default {
             this.$router.push({
                 name:'CategoryBlog',
                 query,
+                // 动态路由导航
                 params:{
                     categoryId: this.routeInfo.categoryId,
                 }

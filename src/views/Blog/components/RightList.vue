@@ -6,7 +6,7 @@
     :class="{active:item.isSelect}"
     @click="handleClick(item)"
     >{{item.aside}}</span>
-    <!-- 使用当前组件 -->
+    <!-- 使用当前组件 组件递归 -->
     <RightList class="right-list-container" :list="item.children" @select="handleClick"></RightList>
     </li>
   </ul>

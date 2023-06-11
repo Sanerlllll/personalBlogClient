@@ -22,7 +22,7 @@ export default {
                     name:"Home",
                     title:"首页",
                     icon:"home",
-                    exact:true
+                    exact:true  //路径地址是否要精确匹配
                 },
                  {
                     name:"Blog",
